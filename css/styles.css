@@ -1,0 +1,232 @@
+/* -------------------- */
+/* styles.css*/
+/* -------------------- */
+
+/* -------------------- */
+/* body*/
+/* -------------------- */
+body {
+    background-color: var(--body);
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+/*======================================
+   itemshopping-cart (nav) CSS
+========================================*/
+
+.clear-product i {
+    top: 10px;
+    right: 10px;
+    max-width: 20px;
+    width: 20px;
+    max-height: 20px;
+    height: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    user-select: none;
+}
+
+.clear-product i:hover {
+    opacity: 0.8;
+}
+
+.clear-product i:hover {
+    transform: scale(1.1);
+
+}
+
+.clear-product i:active {
+    transform: scale(1);
+
+}
+
+/*======================================
+Overlay Style CSS
+========================================*/
+.post-item .card-top:hover .image-overlay {
+    opacity: 1;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.post-item {
+    height: 450px;
+    max-width: 500px;
+}
+
+
+/* -------------------- */
+/* AboutUs Paralax */
+/* -------------------- */
+.parallax-container {
+    background-image: url('../img/imagensMiguel/parallax/truckdriver.png');
+    background-size: cover;
+    background-attachment: fixed;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+
+.parallax-content {
+    background-color: #F4F6FA;
+    color: black;
+    padding: 5px;
+    max-width: 540px;
+    max-height: 429px;
+    border-radius: 15px;
+}
+
+.parallax_form h2 {
+
+    color: #333;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/*======================================
+   Categories CSS
+========================================*/
+.category-item {
+    height: 213px;
+    max-width: 200px;
+    box-shadow: 0px 5px 22px rgba(0, 0, 0, 0.04);
+    transition: box-shadow 0.3s ease-out, transform 0.3s ease-out;
+}
+
+.category-item:hover {
+    transform: translate3d(0, -10px, 0);
+    box-shadow: 0px 21px 44px rgba(0, 0, 0, 0.08);
+}
+
+/*======================================
+ Iframe CSS
+========================================*/
+.google-map {
+    padding-bottom: 20%;
+    position: relative;
+}
+
+.google-map iframe {
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+}
+/*======================================
+   StyckyButton CSS
+========================================*/
+.badge-icon {
+    display: block;
+}
+
+.badge-text {
+    display: none;
+}
+
+.badge-container:hover .badge-icon {
+    display: none;
+}
+
+.badge-container:hover .badge-text {
+    display: block;
+}
+.badge-container {
+    z-index: 97;
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    width: 100px;
+    height: 40px;
+    transition: linear 200ms width;
+    background-color: #4285F4;
+    color: #fff;
+    border-radius: 3px;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.badge-container:hover {
+    width: 200px;
+}
+
+/*======================================
+   footer,nav,icons (hovers and colors mainly)
+========================================*/
+.custom-icon {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #3163a0;
+}
+
+header .navbar .navbar-nav .nav-item:hover {
+    user-select: none;
+    background-color: rgba(218, 218, 218, 0.4);
+}
+
+.socials ul li a {
+    font-size: 16px;
+    color: #999;
+    position: relative;
+}
+
+.socials ul li a:hover {
+    color: #0167F3;
+}
+
+.socials ul li a span {
+    background-color: #0167F3;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 4px 10px;
+    border-radius: 4px;
+    position: absolute;
+    left: 50%;
+    top: -30px;
+    transform: translateX(-50%);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.4s ease;
+}
+
+.socials ul li a:hover span {
+    opacity: 1;
+    visibility: visible;
+    top: -35px;
+}
+
+
+
+.small_copyright {
+    color: #808080;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21px;
+    word-wrap: break-word;
+}
+

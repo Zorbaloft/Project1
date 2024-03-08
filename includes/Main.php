@@ -1,0 +1,9 @@
+<?php
+require_once("includes/OurProducts.php");
+require_once("includes/AboutUsBanner.php");
+require_once("includes/Categories.php");
+require_once("includes/Banners.php");
+require_once("includes/Parteners.php");
+require_once("includes/BlogBanner.php");
+require_once("includes/StyckyButtons.php")
+?>
